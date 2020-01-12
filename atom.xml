@@ -6,7 +6,7 @@
   <link href="/xiajtsandra.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-12T14:22:28.872Z</updated>
+  <updated>2020-01-12T14:25:16.642Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/01/12/MissXia%E3%81%AE2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"/>
     <id>http://yoursite.com/2020/01/12/MissXia%E3%81%AE2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</id>
     <published>2020-01-12T10:55:55.914Z</published>
-    <updated>2020-01-12T14:22:28.872Z</updated>
+    <updated>2020-01-12T14:25:16.642Z</updated>
     
     <content type="html"><![CDATA[<p>2019年是夏小姐踏入大学完整的第一年，感觉过的很艰难，也自闭过一段时间（可能现在也是）。心理上+身体上（呜呜呜），可谓19年来人生大挫。他们说，写下来，理一理是一个好办法，现在有了这一片小空间，也正巧有这个时间静下来好好回顾一下我的2019。所以此文更多的是写给自己的，当然有愿意一点点看我絮叨完的小盆友大盆友也很感谢。</p><h2 id="Academic-life"><a href="#Academic-life" class="headerlink" title="Academic life"></a>Academic life</h2><p>大一下半学期是度过的最混乱的时期，先是备赛和外出比赛耗费了大量的精力与时间，其次没有很好的权衡好兴趣与学业的关系，然后又因为意外的尾椎骨骨折导致一个学期八周的课程我可能在学校的日子只有四周，而养好骨头（并没有）回来后，先是作业补考，然后又是期末，以及心情也没有调整好。自己能感觉到自己的状态非常不好，一是浮躁，二是迷茫。结果就是大一下的GPA相当不尽人意，当时也着实自闭了很久，可能一方面现实与自己的预期和规划偏离了一大步,另一方面是仍没有办法去调整过来。总结下来，就是身心俱疲，忙忙碌碌不知所为。</p><p>大一的那个暑假，过得很充实，也确实有调整了一下自己的状态，至少是外在状态。一个社会实践，一个单项赛总决赛，一个帕多瓦。有思考很多，也有一个人走很多。<br>在湖北恩施泉口的13天社会实践，很艰苦，遇到了很多在管理上的困难，也直面了很多社会的真相。</p>]]></content>
     
@@ -35,10 +35,10 @@
     </summary>
     
     
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+      <category term="Retrospection" scheme="http://yoursite.com/categories/Retrospection/"/>
     
     
-      <category term="Retrospection" scheme="http://yoursite.com/tags/Retrospection/"/>
+      <category term="杂文" scheme="http://yoursite.com/tags/%E6%9D%82%E6%96%87/"/>
     
   </entry>
   
@@ -47,7 +47,7 @@
     <link href="http://yoursite.com/2020/01/11/New%20Start/"/>
     <id>http://yoursite.com/2020/01/11/New%20Start/</id>
     <published>2020-01-11T12:58:02.485Z</published>
-    <updated>2020-01-12T14:22:20.444Z</updated>
+    <updated>2020-01-12T14:25:13.773Z</updated>
     
     <content type="html"><![CDATA[<p>首先，<br>欢迎来到夏小姐的blog！<br>这是一个现在还在完善中的、菜菜的、但会不断成长的blog。</p><h2 id="Brief-description"><a href="#Brief-description" class="headerlink" title="Brief description"></a>Brief description</h2><h3 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h3><p>在2020年1月12日，夏小姐花了一个下午加一个晚上的时间搭建好了这个小空间。搭建这个小空间的想法出现是因为这段时日在搜索学习的过程中遇到了很多大佬，在他们的blog里获得了很多帮助，也有了一些感触。接下来的日子里，希望可以在这个空间，记录下自己的收获，找到方向。</p><h3 id="Process"><a href="#Process" class="headerlink" title="Process"></a>Process</h3><p>搭建这个网站还是花了夏小姐一些脑细胞的。<del>毕竟，因为夏小姐看到英文头疼，所以夏小姐看到代码也头疼(bushi)</del>。但因为有意思，所以讨厌看代码的夏小姐看了一下午+一晚上的代码。T_T&quot;<br>BY the way， 好歹整出来了不是（我真是个小天才！！），虽然还有很多很多bug，但夏小姐再看下去就要死掉了。</p><p>好了说正事，凭空搭出blog对我来说是不可能的，这里我选用了hexo作为架构，然后next作为美化（不得不说，next挺好看的,右下角更好看！)，因为多说插件下线了，所以这里的评论功能就用了Valine，这是一个基于LeanCloud的无后端评论系统（实际上是因为操作简单，next还能支持）。 </p><p>下面我列出一些我借鉴学习的dalao的博文，以供大家借鉴。</p><h4 id="hexo-框架"><a href="#hexo-框架" class="headerlink" title="hexo 框架"></a>hexo 框架</h4><p>韦阳的博客<br>超详细Hexo+Github博客搭建小白教程<br><a href="https://godweiyang.com/2018/04/13/hexo-blog/" target="_blank" rel="noopener">https://godweiyang.com/2018/04/13/hexo-blog/</a></p><p>这篇讲的非常的详细，真的对小白极度友好</p><h4 id="next-美化"><a href="#next-美化" class="headerlink" title="next 美化"></a>next 美化</h4><p>Hexo博客设置以及Next主题美化<br><a href="http://jeffyang.top/Hexo/Hexo%E4%B8%BB%E9%A2%98Next%E7%BE%8E%E5%8C%96/" target="_blank" rel="noopener">http://jeffyang.top/Hexo/Hexo%E4%B8%BB%E9%A2%98Next%E7%BE%8E%E5%8C%96/</a></p><h4 id="评论区"><a href="#评论区" class="headerlink" title="评论区"></a>评论区</h4><p>hexo博客next主题添加 评论功能<br><a href="https://blog.csdn.net/zhu_1997/article/details/87554975" target="_blank" rel="noopener">https://blog.csdn.net/zhu_1997/article/details/87554975</a></p><p>ps: 这一篇也是一边干货满满的文章<br><a href="https://www.jianshu.com/p/f054333ac9e6" target="_blank" rel="noopener">https://www.jianshu.com/p/f054333ac9e6</a></p><h3 id="Finally"><a href="#Finally" class="headerlink" title="Finally"></a>Finally</h3><p>第一篇就大致说到这，接下来是就是等我的域名审核啦~</p><p>这可能算是我第一次利用代码自己干了一些事情，还是很有成就的。这片空间我会好好维护，不定期更新。虽然不像那些业界大神一样样样精通，但会记录一些成长，也希望这个blog的搭建也能在一定程度上激励我更加的努力，成为想成为的人。放下一些过去，忘掉一些不愉快的曾经，作为2020——也是人生一个新的开始，不迷茫。</p><p>Ending……</p>]]></content>
     
@@ -62,10 +62,10 @@
     </summary>
     
     
-      <category term="杂文" scheme="http://yoursite.com/categories/%E6%9D%82%E6%96%87/"/>
+      <category term="New Skills" scheme="http://yoursite.com/categories/New-Skills/"/>
     
     
-      <category term="新技能" scheme="http://yoursite.com/tags/%E6%96%B0%E6%8A%80%E8%83%BD/"/>
+      <category term="Hexo建站" scheme="http://yoursite.com/tags/Hexo%E5%BB%BA%E7%AB%99/"/>
     
   </entry>
   
