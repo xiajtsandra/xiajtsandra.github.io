@@ -36,6 +36,9 @@
     <url>/xiajtsandra.github.io/2020/01/11/New%20Start/</url>
     <content><![CDATA[<p>首先，<br>欢迎来到夏小姐的blog！<br>这是一个现在还在完善中的、菜菜的、但会不断成长的blog。</p>
 <h2 id="Brief-description"><a href="#Brief-description" class="headerlink" title="Brief description"></a>Brief description</h2><h3 id="Origin"><a href="#Origin" class="headerlink" title="Origin"></a>Origin</h3><p>在2020年1月12日，夏小姐花了一个下午加一个晚上的时间搭建好了这个小空间。搭建这个小空间的想法出现是因为这段时日在搜索学习的过程中遇到了很多大佬，在他们的blog里获得了很多帮助，也有了一些感触。接下来的日子里，希望可以在这个空间，记录下自己的收获，找到方向。</p>
+<a id="more"></a>
+
+
 <h3 id="Process"><a href="#Process" class="headerlink" title="Process"></a>Process</h3><p>搭建这个网站还是花了夏小姐一些脑细胞的。<del>毕竟，因为夏小姐看到英文头疼，所以夏小姐看到代码也头疼(bushi)</del>。但因为有意思，所以讨厌看代码的夏小姐看了一下午+一晚上的代码。T_T&quot;<br>BY the way， 好歹整出来了不是（我真是个小天才！！），虽然还有很多很多bug，但夏小姐再看下去就要死掉了。</p>
 <p>好了说正事，凭空搭出blog对我来说是不可能的，这里我选用了hexo作为架构，然后next作为美化（不得不说，next挺好看的,右下角更好看！)，因为多说插件下线了，所以这里的评论功能就用了Valine，这是一个基于LeanCloud的无后端评论系统（实际上是因为操作简单，next还能支持）。 </p>
 <p>下面我列出一些我借鉴学习的dalao的博文，以供大家借鉴。</p>
