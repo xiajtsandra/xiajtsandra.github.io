@@ -3,7 +3,7 @@
   <entry>
     <title>单片机学习笔记1.1</title>
     <url>/xiajtsandra.github.io/2020/01/13/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-1/</url>
-    <content><![CDATA[<p>![IMG_6647(20191218-062902).JPG]</p>
+    <content><![CDATA[<p>![单片机学习笔记1.1/IMG_6647(20191218-062902).JPG]</p>
 <a id="more"></a>
 
 <h2 id="点亮一颗LED"><a href="#点亮一颗LED" class="headerlink" title="点亮一颗LED"></a>点亮一颗LED</h2><h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>Step1: Project-&gt;New μVersion Project 选择芯片<br>Step2: ctrl + N -&gt; ctrl + s 保存为.c<br>Step3: Click Source Group 1-&gt; Add Existing files…..<br>Step4: Write the code</p>
