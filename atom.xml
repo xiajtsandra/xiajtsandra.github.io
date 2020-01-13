@@ -6,7 +6,7 @@
   <link href="/xiajtsandra.github.io/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-01-12T16:09:37.716Z</updated>
+  <updated>2020-01-12T18:42:24.162Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单片机学习笔记1.1</title>
+    <link href="http://yoursite.com/2020/01/13/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-1/"/>
+    <id>http://yoursite.com/2020/01/13/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-1/</id>
+    <published>2020-01-12T18:22:17.000Z</published>
+    <updated>2020-01-12T18:42:24.162Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="点亮一颗LED"><a href="#点亮一颗LED" class="headerlink" title="点亮一颗LED"></a>点亮一颗LED</h2><h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>Step1: Project-&gt;New μVersion Project 选择芯片<br>Step2: ctrl + N -&gt; ctrl + s 保存为.c<br>Step3: Click Source Group 1-&gt; Add Existing files…..<br>Step4: Write the code</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line">sbit LED = P0^<span class="number">0</span>;</span><br><span class="line">sbit ADDR0 = P1^<span class="number">0</span>;</span><br><span class="line">sbit ADDR1 = P1^<span class="number">1</span>;</span><br><span class="line">sbit ADDR2 = P1^<span class="number">2</span>;</span><br><span class="line">sbit ADDR3 = P1^<span class="number">3</span>;</span><br><span class="line">sbit ENLED = P1^<span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">ENLED = <span class="number">0</span>;</span><br><span class="line">ADDR3 = <span class="number">1</span>;</span><br><span class="line">ADDR2 = <span class="number">1</span>;</span><br><span class="line">ADDR1 = <span class="number">1</span>;</span><br><span class="line">ADDR0 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">&#123;</span><br><span class="line">LED = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">LED = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>Step5: 先勾选 Create hex files<br>       再 Rebuild</p><p>Step6:  Downoad STC-ISP<br><a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">http://www.stcmcu.com/index.htm</a></p><p>Step7:  choose the chip<br>        choose the file<br>        download into the chip</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;点亮一颗LED&quot;&gt;&lt;a href=&quot;#点亮一颗LED&quot; class=&quot;headerlink&quot; title=&quot;点亮一颗LED&quot;&gt;&lt;/a&gt;点亮一颗LED&lt;/h2&gt;&lt;h3 id=&quot;新建项目&quot;&gt;&lt;a href=&quot;#新建项目&quot; class=&quot;headerlink&quot; titl
+      
+    
+    </summary>
+    
+    
+      <category term="单片机C51" scheme="http://yoursite.com/categories/%E5%8D%95%E7%89%87%E6%9C%BAC51/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>MissXiaの2019年终总结</title>

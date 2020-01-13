@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>单片机学习笔记1.1</title>
+    <url>/xiajtsandra.github.io/2020/01/13/%E5%8D%95%E7%89%87%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B01-1/</url>
+    <content><![CDATA[<h2 id="点亮一颗LED"><a href="#点亮一颗LED" class="headerlink" title="点亮一颗LED"></a>点亮一颗LED</h2><h3 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h3><p>Step1: Project-&gt;New μVersion Project 选择芯片<br>Step2: ctrl + N -&gt; ctrl + s 保存为.c<br>Step3: Click Source Group 1-&gt; Add Existing files…..<br>Step4: Write the code</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line">sbit LED = P0^<span class="number">0</span>;</span><br><span class="line">sbit ADDR0 = P1^<span class="number">0</span>;</span><br><span class="line">sbit ADDR1 = P1^<span class="number">1</span>;</span><br><span class="line">sbit ADDR2 = P1^<span class="number">2</span>;</span><br><span class="line">sbit ADDR3 = P1^<span class="number">3</span>;</span><br><span class="line">sbit ENLED = P1^<span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	ENLED = <span class="number">0</span>;</span><br><span class="line">	ADDR3 = <span class="number">1</span>;</span><br><span class="line">	ADDR2 = <span class="number">1</span>;</span><br><span class="line">	ADDR1 = <span class="number">1</span>;</span><br><span class="line">	ADDR0 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">		LED = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Step5: 先勾选 Create hex files<br>       再 Rebuild</p>
+<p>Step6:  Downoad STC-ISP<br><a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">http://www.stcmcu.com/index.htm</a></p>
+<p>Step7:  choose the chip<br>        choose the file<br>        download into the chip</p>
+]]></content>
+      <categories>
+        <category>单片机C51</category>
+      </categories>
+      <tags>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MissXiaの2019年终总结</title>
     <url>/xiajtsandra.github.io/2020/01/12/MissXia%E3%81%AE2019%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<p>2019年是夏小姐踏入大学完整的第一年，感觉过的很艰难，也自闭过一段时间（可能现在也是）。心理上+身体上（呜呜呜），可谓19年来人生大挫。他们说，写下来，理一理是一个好办法，现在有了这一片小空间，也正巧有这个时间静下来好好回顾一下我的2019。所以此文更多的是写给自己的，当然有愿意一点点看我絮叨完的小盆友大盆友也很感谢。</p>
