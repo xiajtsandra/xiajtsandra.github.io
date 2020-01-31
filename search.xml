@@ -66,10 +66,8 @@ uchar temp;  <span class="comment">//8bits</span>
     <span class="keyword">for</span>(x=<span class="number">100</span>;x&gt;<span class="number">0</span>;x--)
         <span class="keyword">for</span>(y=z;y&gt;<span class="number">0</span>;y--);
 
-}    
-
-## 其他尝试
-这几天还尝试了动态静态数码管、蜂鸣器、超声波测距。。。等但模块，实现方式大同小异，注意点无非是看原理图注意针脚，驱动电平等等等，就不赘述，这些算是最最最基础的入门小问题了，接下来可能要根据你校课程大纲改改学习方向（逃</code></pre>
+}</code></pre>
+<h2 id="其他尝试"><a href="#其他尝试" class="headerlink" title="其他尝试"></a>其他尝试</h2><p>这几天还尝试了动态静态数码管、蜂鸣器、超声波测距。。。等但模块，实现方式大同小异，注意点无非是看原理图注意针脚，驱动电平等等等，就不赘述，这些算是最最最基础的入门小问题了，接下来可能要根据你校课程大纲改改学习方向（逃</p>
 ]]></content>
       <categories>
         <category>单片机C51</category>
