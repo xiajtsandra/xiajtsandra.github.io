@@ -7,7 +7,7 @@
 <a id="more"></a>
 
 <h2 id="“点亮一颗LED”"><a href="#“点亮一颗LED”" class="headerlink" title="“点亮一颗LED”"></a>“点亮一颗LED”</h2><h3 id="新建项目（建立工程）"><a href="#新建项目（建立工程）" class="headerlink" title="新建项目（建立工程）"></a>新建项目（建立工程）</h3><p>Step1: Project-&gt;New μVersion Project 选择芯片<br>Step2: ctrl + N -&gt; ctrl + s 保存为.c<br>Step3: Click Source Group 1-&gt; Add Existing files…..<br>Step4: Write the code</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line">sbit LED = P0^<span class="number">0</span>;</span><br><span class="line">sbit ADDR0 = P1^<span class="number">0</span>;</span><br><span class="line">sbit ADDR1 = P1^<span class="number">1</span>;</span><br><span class="line">sbit ADDR2 = P1^<span class="number">2</span>;</span><br><span class="line">sbit ADDR3 = P1^<span class="number">3</span>;</span><br><span class="line">sbit ENLED = P1^<span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">	</span><br><span class="line">	ENLED = <span class="number">0</span>;</span><br><span class="line">	ADDR3 = <span class="number">1</span>;</span><br><span class="line">	ADDR2 = <span class="number">1</span>;</span><br><span class="line">	ADDR1 = <span class="number">1</span>;</span><br><span class="line">	ADDR0 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">		LED = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span></span><br><span class="line"></span><br><span class="line">sbit LED = P0^<span class="number">0</span>;</span><br><span class="line">sbit ADDR0 = P1^<span class="number">0</span>;</span><br><span class="line">sbit ADDR1 = P1^<span class="number">1</span>;</span><br><span class="line">sbit ADDR2 = P1^<span class="number">2</span>;</span><br><span class="line">sbit ADDR3 = P1^<span class="number">3</span>;</span><br><span class="line">sbit ENLED = P1^<span class="number">4</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	ENLED = <span class="number">0</span>;</span><br><span class="line">	ADDR3 = <span class="number">1</span>;</span><br><span class="line">	ADDR2 = <span class="number">1</span>;</span><br><span class="line">	ADDR1 = <span class="number">1</span>;</span><br><span class="line">	ADDR0 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">while</span>(<span class="number">1</span>)</span><br><span class="line">	&#123;</span><br><span class="line">		LED = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">		LED = <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>; i&lt;<span class="number">30000</span>;i++);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Step5: 先勾选 Create hex files<br>       再 Rebuild</p>
 <p>Step6:  Downoad STC-ISP<br><a href="http://www.stcmcu.com/index.htm" target="_blank" rel="noopener">http://www.stcmcu.com/index.htm</a></p>
 <p>Step7:  choose the chip<br>        choose the file<br>        download into the chip</p>
@@ -17,12 +17,12 @@
 </blockquote>
 <ul>
 <li><p>while语句：</p>
-<pre><code class="c">a=<span class="number">51000</span>;
+<pre><code class="C">a=<span class="number">51000</span>;
 p1_1=<span class="number">0</span>;
 <span class="keyword">while</span>(a--);</code></pre>
 </li>
 <li><p>借用软件 for语句嵌套，精确计算延时（↓这是800ms延时的子函数）：</p>
-<pre><code class="c"><span class="function"><span class="keyword">void</span> <span class="title">delay800ms</span><span class="params">(<span class="keyword">void</span>)</span>   </span>
+<pre><code class="C"><span class="function"><span class="keyword">void</span> <span class="title">delay800ms</span><span class="params">(<span class="keyword">void</span>)</span>   </span>
 <span class="function"></span>{
   <span class="keyword">unsigned</span> <span class="keyword">char</span> a,b,c;
   <span class="keyword">for</span>(c=<span class="number">95</span>;c&gt;<span class="number">0</span>;c--)
@@ -42,16 +42,17 @@ p1_1=<span class="number">0</span>;
 <li>指令周期：完成一条CPU指令所需的全部时间，由1~几个机器周期组成。 单周期指令 双周期指令 四周期指令</li>
 </ul>
 <h3 id="流水灯"><a href="#流水灯" class="headerlink" title="流水灯"></a>流水灯</h3><p>在实现流水灯时用了一个非常神奇（快速）的方式，Led点阵正好有8个，二进制 1111 1110 对应的就是这八个针脚的电平高低，转化为16进制是0xfe（0x代表十六进制，fe代表1111 1110）。希望实现流水灯的效果，即将低电平位循环左移（led点阵一段共阳，所以低电平驱动）</p>
-<pre><code class="c"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span>
+<pre><code class="C"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;reg52.h&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;intrins.h&gt;</span></span>
 <span class="meta">#<span class="meta-keyword">define</span> uint unsigned int </span>
 <span class="meta">#<span class="meta-keyword">define</span> uchar unsigned char </span>
+
 uchar temp;  <span class="comment">//8bits</span>
 <span class="function"><span class="keyword">void</span> <span class="title">delay</span><span class="params">(uint)</span></span>;
 <span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>
 <span class="function"></span>{
     temp=<span class="number">0xfe</span>; <span class="comment">//1111 1110 </span>
-    P2=temp;
+    P2 = temp ;
     <span class="keyword">while</span>(<span class="number">1</span>)
     {
         temp=_crol_(temp,<span class="number">1</span>);  <span class="comment">// 移位</span>
